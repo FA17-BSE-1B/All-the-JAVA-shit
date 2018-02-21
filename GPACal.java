@@ -1,9 +1,6 @@
 import java.util.Scanner;
-import java.text.DecimalFormat;
 
-
-public class GPACal{
-  private static DecimalFormat d2f = new DecimalFormat(".##");
+public class CGPACal{
   public static void main(String args[]){
     Scanner input = new Scanner(System.in);
     int eca_credit = 4; //variable to store credits for ECA
@@ -14,7 +11,7 @@ public class GPACal{
     total_credits = eca_credit + isl_credit + ict_credit + cal_credit;
     System.out.print("Enter your ECA GPA: ");
     eca = input.nextDouble();
-    eca *= eca_credit; 
+    eca *= eca_credit;
     System.out.print("Enter your ICT GPA: ");
     ict = input.nextDouble();
     ict *= ict_credit;
@@ -25,8 +22,8 @@ public class GPACal{
     isl = input.nextDouble();
     isl *= isl_credit;
     total_gpa = eca + isl + ict + cal;
-    cGPA = total_gpa/total_credits;
-    System.out.println("Your CGPA is: " + d2f.format(cGPA));
-
+    cGPA = (int)((total_gpa/total_credits) * 100) / 100.0;
+    //gpa = (int) cGPA / 100.0;
+    System.out.println("Your CGPA is: " + cGPA);
   }
 }
