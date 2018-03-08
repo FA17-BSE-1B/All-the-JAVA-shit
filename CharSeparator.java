@@ -23,8 +23,6 @@ public class CharSeparator{
       else{
         j = 0;
       }
-
-
       if (j == searchLength){
         found = true;
         i = strLength;
