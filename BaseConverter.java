@@ -270,6 +270,41 @@ public class BaseConverter{
   }
 
   public static void hexToOther(String num){
-    System.out.println("Work in progress");
+    //Declaration block
+    int numLength, exponent, decimalNum, digit;
+    String binaryNum, octalNum;
+    //Initialization block
+    numLength = num.length();
+    decimalNum = 0;
+    exponent = 0;
+
+    //Working block
+    //Hex to decimal
+    for (int i = numLength-1; i >= 0; i--){
+        digit = (char)num.charAt(i);
+        if ((char)digit >= 'A'){
+          digit = (10 + (digit - 'A'));
+        }else{
+          digit -= (char)'0';
+        }
+        decimalNum += (digit * (int)Math.pow(16, exponent));
+        exponent++;
+    }
+
+    // Decimal to binary
+    binaryNum = decimalToBinary(decimalNum);
+    //Decimal to octal
+    octalNum = decimalToOctal(decimalNum);
+
+    //Display the obtained results
+    System.out.println("Following are all the conversions for the decimal number: " + num);
+    System.out.println("==========================================================");
+    System.out.println("Binary: " + binaryNum);
+    System.out.println("Octal: " + octalNum);
+    System.out.println("Decimal: " + decimalNum);
+    System.out.println("==========================================================");
+    System.out.println();
+
+
   }
 }
