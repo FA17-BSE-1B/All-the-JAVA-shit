@@ -58,7 +58,6 @@ public class BaseConverter{
         }
       }
     }else if (base == 8){
-      //System.out.println("Base 8");
       for (int i = numLegnth-1; i >= 0; i--){
         if (stringNum.charAt(i) >= '0' && stringNum.charAt(i) <= '7'){
           validFlag = true;
@@ -74,7 +73,6 @@ public class BaseConverter{
         }
       }
     }else if (base == 10){
-      //System.out.println("Base 10");
       for (int i = numLegnth-1; i>= 0; i--){
         if (stringNum.charAt(i) >= '0' && stringNum.charAt(i) <= '9'){
           validFlag = true;
