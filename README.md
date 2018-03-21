@@ -1,9 +1,9 @@
 # Java dai codes
 The repo will house all the programming fundamentals java codes
 ## Thursday, Febuary 8th, 2018
-1.) Temperature converter
-2.) Table finder
-Quadratic formula solver
+- Temperature converter
+- Table finder
+- Quadratic formula solver
 ## Thursday, Febuary 15th, 2018
 CGPA calculator
 Digit separator
