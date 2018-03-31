@@ -29,7 +29,7 @@ The repo will house all the programming fundamentals java codes
   e.g. Decimal to hex, octal to hex etc.
   BaseConverter.java
   ```
-## Thursday, March 1th, 2018 (Lab Quiz 1)
+## Thursday, March 1st, 2018 (Lab Quiz 1)
 - String item anaylyzer (Number of character number etc.)
   ```
   StringItemFinder.java  
@@ -56,7 +56,7 @@ The repo will house all the programming fundamentals java codes
   MultipleCharFinder.java
   ```
 
-## Thursday, March 15th, 2018
+## Thursday, March 29th, 2018
 - Lab sessional codes
   ```
    Question 2
