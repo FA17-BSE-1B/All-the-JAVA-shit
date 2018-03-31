@@ -55,6 +55,14 @@ The repo will house all the programming fundamentals java codes
   Checks for multiple instances of the same character or word in the string
   MultipleCharFinder.java
   ```
-  ```
+
 ## Thursday, March 15th, 2018
-- Question 2
+- Lab sessional codes
+  ```
+   Question 2
+   Reverse number
+   Question 3
+   Print hex value
+   Question 4
+   Program to find string in item in a string excluding the first and last word
+  ```
