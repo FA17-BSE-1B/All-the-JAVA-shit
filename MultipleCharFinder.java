@@ -1,15 +1,12 @@
 import java.util.Scanner;
 public class MultipleCharFinder{
   public static void main(String[] args){
-    //Declaration block
     Scanner input = new Scanner(System.in);
     int j, foundCount, strLength, searchLength, index;
     String str, searchItem;
-    //Initialization block
     j = 0;
     foundCount = 0;
     index = 0;
-    //Working block
     str = input.nextLine();
     strLength = str.length();
     searchItem = input.nextLine();
