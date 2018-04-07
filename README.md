@@ -68,19 +68,19 @@ The repo will house all the programming fundamentals java codes
   ```
 ## Thursday, April 5th, 2018
 - Table 2-D (for loops)
-```
-```
+  ```
+  ```
 - Remaining days
-```
-```
+  ```
+  ```
 - Hex to decimal and vice verse
-```
-BaseConverter.java
-```
+  ```
+  BaseConverter.java
+  ```
 - LCM and HCF
-```
-LCM_HCF.java
-```
+  ```
+  LCM_HCF.java
+  ```
 - Prime Number 
-```
-```
+  ```
+  ```
