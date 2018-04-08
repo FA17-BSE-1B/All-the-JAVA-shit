@@ -69,7 +69,7 @@ The repo will house all the programming fundamentals java codes
 ## Thursday, April 5th, 2018
 - Table 2-D (for loops)
   ```
-  
+  2-D_Table.java
   ```
 - Remaining days
   ```
