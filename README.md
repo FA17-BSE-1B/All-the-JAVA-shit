@@ -69,9 +69,11 @@ The repo will house all the programming fundamentals java codes
 ## Thursday, April 5th, 2018
 - Table 2-D (for loops)
   ```
+  
   ```
 - Remaining days
   ```
+  RemainingDays.java
   ```
 - Hex to decimal and vice verse
   ```
@@ -83,4 +85,5 @@ The repo will house all the programming fundamentals java codes
   ```
 - Prime Number 
   ```
+  PrimeNumber.java
   ```
