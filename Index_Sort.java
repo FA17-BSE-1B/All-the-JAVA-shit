@@ -1,17 +1,17 @@
 import java.util.Scanner;
-public class SirsSort{
+public class Test{
   public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int [] list = new int[5];
         int [] b = {1, 1, 1, 1, 1};
         int [] index = new int[5];
         int minNum, minIndex, largestNum, largestIndex;
-        System.out.print("Key in a number: ");
+        System.out.print("Enter a number: ");
         list[0] = input.nextInt();
         largestNum = list[0];
         largestIndex = 0;
         for (int i = 1; i < 5; i++) {
-            System.out.print("Key in a number: ");
+            System.out.print("Enter a number: ");
             list[i] = input.nextInt();
             if (list[i] > largestNum){
                 largestNum = list[i];
