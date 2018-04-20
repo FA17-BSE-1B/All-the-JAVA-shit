@@ -94,9 +94,9 @@ The repo will house all the programming fundamentals java codes
   ```
 ## Thursday, April 19th, 2018
 - Linear Search
-```
-LinearSearch.java
-```
+  ```
+  LinearSearch.java
+  ```
 - Binary Search
   ```
   BinarySearch.java
