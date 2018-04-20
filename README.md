@@ -92,3 +92,12 @@ The repo will house all the programming fundamentals java codes
   ```
   Index_Sort.java
   ```
+## Thursday, April 19th, 2018
+- Linear Search
+```
+LinearSearch.java
+```
+- Binary Search
+  ```
+  BinarySearch.java
+  ```
