@@ -1,12 +1,10 @@
 import java.util.Scanner;
 public class PatternSearch{
   public static void main(String[] args) {
-        //Declaration block
         boolean found;
         String str, pattern;
         int strLength, patternLegnth, position;
         Scanner input = new Scanner(System.in);
-        //Working block
         str = "a quick brown fox jumps over the lazy dog to fix it";
         strLength = str.length();
         System.out.print("Enter the search item: ");
