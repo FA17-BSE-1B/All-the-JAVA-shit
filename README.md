@@ -101,3 +101,8 @@ The repo will house all the programming fundamentals java codes
   ```
   BinarySearch.java
   ```
+## Saturday, April 21st, 2018
+- Pattern Search
+  ```
+  PatternSearch.java
+  ```
