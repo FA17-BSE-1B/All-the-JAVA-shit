@@ -88,6 +88,14 @@ The repo will house all the programming fundamentals java codes
   PrimeNumber.java
   ```
 ## Thursday, April 12th, 2018
+-Bubble sort
+  ```
+  BubbleSort.java
+  ```
+- Selection Sort 
+  ```
+  SelectionSort.java
+  ```
 - Index Sort
   ```
   Index_Sort.java
