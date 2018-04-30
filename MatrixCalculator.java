@@ -57,7 +57,6 @@ public class MatrixCalculator{
        System.out.println("C. Print column of the matrix");
        System.out.println("M. Multiply matrix");
        System.out.println("0. Exit");
-       System.out.println();
    }
 
    public static int [][] setMat(){
@@ -76,9 +75,7 @@ public class MatrixCalculator{
                mat [row][column] = getInput.nextInt();
            }
        }
-       System.out.println();
        displayMatrix(mat);
-       System.out.println();
        return mat;
    }
 
@@ -103,7 +100,6 @@ public class MatrixCalculator{
           }
       }
       displayMatrix(matA);
-      System.out.println();
       displayMatrix(transposeMat);
    }
 
