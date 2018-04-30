@@ -110,7 +110,7 @@ public class MatrixCalculator{
    }
 
    public static void printColumn(int column, int [][] mat){
-     for (int row = 0; column < mat[0].length; row++){
+     for (int row = 0; row < mat.length; row++){
        System.out.printf("%-4d", mat[row][column]);
      }
    }
