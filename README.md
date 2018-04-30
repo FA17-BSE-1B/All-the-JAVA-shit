@@ -114,3 +114,12 @@ The repo will house all the programming fundamentals java codes
   ```
   PatternSearch.java
   ```
+## Thursday, April 26th, 2018
+- Matrix Tasks
+  ```
+  2D_Tasks.java
+  ```
+- Matrix Calculator
+  ```
+  MatrixCalculator.java
+  ```
