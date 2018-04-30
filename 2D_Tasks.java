@@ -1,12 +1,10 @@
 import java.util.Scanner;
 public class 2D_Tasks{
   public static void main(String[] args){
-            //Declaration block
             Scanner getInput = new Scanner(System.in);
             int [][] array = new int [5][5];
             int item, i;
             i = 0;
-            //Working block
             for (int row = 0; row < 5; row++)
                 for (int column = 0; column < 5; column++){
                     i++;
@@ -48,4 +46,3 @@ public class 2D_Tasks{
             return column;
         }
 }
-//System.out.println();
