@@ -1,20 +1,14 @@
 import java.util.Scanner;
 public class MatrixCalculator{
   public static void main(String[] args) {
-       //Declaration block
        Scanner getInput = new Scanner(System.in);
        int [][] mat = {{0,0,0,0}};
        boolean end = false;
        String userChoice = "";
-       //Working block
-       System.out.println("==================================================");
-       System.out.println("                MATRIX CALCULATOR");
        while (end != true){
-           //Set up welcome screen
            mainScreen();
            System.out.print("Select an option: ");
            userChoice = getInput.next();
-           userChoice = userChoice.toUpperCase();
            switch (userChoice){
                case "E":
                 {
@@ -30,13 +24,13 @@ public class MatrixCalculator{
                 }
                case "R":
                 {
-                  System.out.println("Key in the row you would like to be printed");
+                  System.out.println("Enter row");
                   int row = getInput.nextInt();
                   printRow(row, mat);
                 }
                case "C":
                 {
-                  System.out.println("Key in the column you would like to be printed");
+                  System.out.println("Enter column");
                   int column = getInput.nextInt();
                   printColumn(column, mat);
                 }
@@ -46,20 +40,16 @@ public class MatrixCalculator{
                   break;
                 }
                case "0":
-                System.out.println();
-                System.out.println("Program Terminated");
                 end = true;
                 break;
                default:
                 System.out.println("Invalid selection");
 
            }
-           //System.out.println();
        }
 
    }
    public static void mainScreen(){
-       System.out.println("==================================================");
        System.out.println("E. Set Matrix");
        System.out.println("P. Print the Matrix");
        System.out.println("T. Transpose of the matrix");
@@ -71,25 +61,15 @@ public class MatrixCalculator{
    }
 
    public static int [][] setMat(){
-       //Declaration block
        Scanner getInput = new Scanner(System.in);
        int rows, columns;
        int [][] mat;
-       //Working block
-       System.out.println("================================================");
-       System.out.println("                Set Matrix");
-       System.out.println("================================================");
-
-       System.out.print("Key in the number of rows of the matrix: ");
+       System.out.print("Enter number of rows of the matrix: ");
        rows = getInput.nextInt();
-       System.out.print("Key in the number of columns of the matrix: ");
+       System.out.print("Enter number of columns of the matrix: ");
        columns = getInput.nextInt();
-       //Create matrix
        mat = new int[rows][columns];
-       //Display the resulting Matrix
-       System.out.println("Matrix has been set up for " + rows + " rows and " + columns + " columns");
-       //Get matrix values
-       System.out.println("Enter the individual values");
+       System.out.println("Enter values");
        for (int row = 0; row < rows; row++){
            for (int column = 0; column < columns; column++){
                System.out.print("Value: ");
@@ -99,8 +79,6 @@ public class MatrixCalculator{
        System.out.println();
        displayMatrix(mat);
        System.out.println();
-       enterToContinue();
-       //Return the matrix created
        return mat;
    }
 
@@ -114,7 +92,6 @@ public class MatrixCalculator{
            }
            System.out.println();
        }
-       //enterToContinue();
    }
 
    public static void transpose(){
@@ -128,7 +105,6 @@ public class MatrixCalculator{
       displayMatrix(matA);
       System.out.println();
       displayMatrix(transposeMat);
-      enterToContinue();
    }
 
    public static void printRow(int row, int [][] mat){
@@ -144,10 +120,10 @@ public class MatrixCalculator{
    }
 
    public static void multiplyMatrices(){
-     int row = 0; //Row for matrix one
-     int column = 0; //Column for matrix one
-     int r = 0; //Row for matrix two
-     int c = 0; //Column for matrix two
+     int row = 0; 
+     int column = 0; 
+     int r = 0; 
+     int c = 0; 
         int temp = 0;
         int [][] matA = setMat();
         int [][] matB = setMat();
@@ -156,34 +132,23 @@ public class MatrixCalculator{
             while (row < matA.length){
                 while (r < matB.length){
                     temp += matA[row][column] * matB[r][c];
-                    column++; //Move to the next column in matrix one
-                    r++; //Move to the next row in matrix two
+                    column++; 
+                    r++; 
                 }
                 matC[row][c] = temp;
                 temp = 0;
                 column = 0; r = 0;
-                if (c == matB[0].length-1){ //If reached the end of second matrix
-                    row++; //Go to the next row in matrix one
-                    c = 0; //Reset the column number of matrix two
+                if (c == matB[0].length-1){ 
+                    row++; 
+                    c = 0; 
                 }
                 else
-                    c++; //Go to the next column in matrix two
+                    c++; 
             }
             displayMatrix(matC);
           }
           else{
             System.out.println("Both the matrix are not of the same order");
           }
-          enterToContinue();
-   }
-
-   public static void enterToContinue(){
-       System.out.println("Press Enter key to continue...");
-       try
-       {
-           System.in.read();
-       }
-       catch(Exception e)
-       {}
    }
 }
