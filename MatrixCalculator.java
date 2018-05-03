@@ -93,10 +93,10 @@ public class MatrixCalculator{
 
    public static void transpose(){
       int [][] matA = setMat();
-      int [][] transposeMat = new int [matA.length][matA[0].length];
-      for (int row = 0; row < matA.length; row++){
-          for (int column = 0; column < matA[0].length; column++){
-              transposeMat[row][column] = matA[column][row];
+      int [][] transposeMat = new int [mat[0].length][mat.length];
+      for (int row = 0; row < transposeMat.length; row++){
+          for (int column = 0; column < transposeMat[0].length; column++){
+              transposeMat[row][column] = mat[column][row];
           }
       }
       displayMatrix(matA);
