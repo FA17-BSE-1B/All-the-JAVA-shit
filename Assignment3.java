@@ -6,7 +6,7 @@ public class Assignment3 {
             Scanner getInput = new Scanner(System.in);
             File studentFile = new File("database.txt");
             int usr = 1;
-            while (userChoice != 0) {
+            while (usr != 0) {
                 System.out.println("1. Enter student data to the database");
                 System.out.println("2. Read student data from the database");
                 System.out.println("0. Exit program");
