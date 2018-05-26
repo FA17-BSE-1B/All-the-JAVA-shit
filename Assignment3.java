@@ -26,7 +26,6 @@ public class Assignment3 {
                 }
             }
         }
-
     public static void writeData(File studentFile, Scanner getInput) throws Exception{
             PrintWriter FileWriter = new PrintWriter(studentFile);
             int stdNum;
@@ -56,7 +55,6 @@ public class Assignment3 {
             }
             FileWriter.close();
         }
-
         public static void readData(File studentFile, Scanner getInput) throws Exception{
             Scanner FileRead = new Scanner(studentFile);
             String searchName = "";
@@ -92,7 +90,6 @@ public class Assignment3 {
                     System.out.println("Student not found");
             }
         }
-
         public static int NumberOfRecords(File studentFile) throws Exception{
             Scanner FileRead = new Scanner(studentFile);
             int lineCount = 0;
